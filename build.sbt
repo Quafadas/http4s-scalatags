@@ -30,5 +30,6 @@ lazy val scalatags = crossProject(JVMPlatform, JSPlatform, NativePlatform)
     ),
   )
   .nativeSettings(
+    crossScalaVersions := Seq(Scala213, "3.3.7"),
     unusedCompileDependenciesTest := {}
   )
